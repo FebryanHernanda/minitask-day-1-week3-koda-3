@@ -14,13 +14,13 @@
     <h1>Form Survey Perokok</h1>
     <form>
       <div>
-        <label for="nama">Nama :</label>
-        <input type="text" name="nama" id="nama" placeholder="Slamet" />
+        <label for="name">Nama :</label>
+        <input type="text" name="name" id="name" placeholder="Slamet" />
       </div>
 
       <div>
-        <label for="umur">Umur :</label>
-        <input type="number" name="umur" id="umur" placeholder="25" />
+        <label for="age">Umur :</label>
+        <input type="number" name="age" id="age" placeholder="25" />
       </div>
 
       <div>
@@ -28,21 +28,21 @@
         <br />
         <input
           type="radio"
-          name="survey_perokok"
+          name="survey_smoker"
           id="yes"
           value="iya"
           checked
         /><label for="yes">Iya</label>
 
-        <input type="radio" name="survey_perokok" id="no" value="tidak" /><label
+        <input type="radio" name="survey_smoker" id="no" value="Tidak" /><label
           for="no"
           >Tidak</label
         >
       </div>
 
       <div>
-        <label for="jenis_rokok">Jenis Rokok: </label>
-        <select name="jenis_rokok" id="jenisrokok">
+        <label for="type_cigarettes">Jenis Rokok: </label>
+        <select name="type_cigarettes" id="type_cigarettes">
           <option value="" disabled selected></option>
           <option value="Rokok Filter">Rokok Filter</option>
           <option value="Rokok Kretek">Rokok Kretek</option>
@@ -56,7 +56,7 @@
         <div>
           <input
             type="checkbox"
-            name="merk_rokok"
+            name="brand_cigarettes"
             id="marlboro"
             value="Marlboro"
           />
@@ -64,7 +64,7 @@
 
           <input
             type="checkbox"
-            name="merk_rokok"
+            name="brand_cigarettes"
             id="gudang-garam"
             value="Gudang Garam"
           />
@@ -74,7 +74,7 @@
         <div>
           <input
             type="checkbox"
-            name="merk_rokok"
+            name="brand_cigarettes"
             id="sampoerna"
             value="Sampoerna"
           />
@@ -82,15 +82,15 @@
 
           <input
             type="checkbox"
-            name="merk_rokok"
-            id="kapalsakti"
+            name="brand_cigarettes"
+            id="magicship"
             value="Kapal Sakti"
           />
           <label for="kapalsakti">Kapal Sakti</label>
 
           <input
             type="checkbox"
-            name="merk_rokok"
+            name="brand_cigarettes"
             id="dunhill"
             value="Dunhill"
           />
@@ -98,19 +98,24 @@
         </div>
 
         <div>
-          <input type="checkbox" name="merk_rokok" id="esse" value="Esse" />
+          <input
+            type="checkbox"
+            name="brand_cigarettes"
+            id="esse"
+            value="Esse"
+          />
           <label for="esse">Esse</label>
 
-          <input type="checkbox" name="merk_rokok" id="N/A" value="N/A" />
+          <input type="checkbox" name="brand_cigarettes" id="N/A" value="N/A" />
           <label for="N/A">Tidak Ada</label>
 
           <input
             type="checkbox"
-            name="merk_rokok"
-            id="lainnya"
-            value="Lainnya"
+            name="brand_cigarettes"
+            id="other"
+            value="other"
           />
-          <label for="lainnya">Lainnya</label>
+          <label for="other">Lainnya</label>
         </div>
       </div>
       <button type="submit">Submit</button>
