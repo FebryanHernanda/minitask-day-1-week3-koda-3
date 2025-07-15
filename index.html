@@ -3,7 +3,118 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="description"
+      content="Form Survey Perokok - Koda Tech Academy 3"
+    />
+    <link rel="icon" type="image/x-icon" href="/assets/icon.png" />
+    <title>Survey Perokok - Koda 3</title>
   </head>
-  <body></body>
+  <body>
+    <h1>Form Survey Perokok</h1>
+    <form>
+      <div>
+        <label for="nama">Nama :</label>
+        <input type="text" name="nama" id="nama" placeholder="Slamet" />
+      </div>
+
+      <div>
+        <label for="umur">Umur :</label>
+        <input type="number" name="umur" id="umur" placeholder="25" />
+      </div>
+
+      <div>
+        <label>Apakah Anda Perokok?</label>
+        <br />
+        <input
+          type="radio"
+          name="survey_perokok"
+          id="yes"
+          value="iya"
+          checked
+        /><label for="yes">Iya</label>
+
+        <input type="radio" name="survey_perokok" id="no" value="tidak" /><label
+          for="no"
+          >Tidak</label
+        >
+      </div>
+
+      <div>
+        <label for="jenis_rokok">Jenis Rokok: </label>
+        <select name="jenis_rokok" id="jenisrokok">
+          <option value="" disabled selected></option>
+          <option value="Rokok Kretek">Rokok Kretek</option>
+          <option value="Rokok Filter">Rokok Filter</option>
+          <option value="Rokok Kretek">Rokok Elektrik</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Merk Rokok yang digunakan :</label> <br />
+        <div>
+          <input
+            type="checkbox"
+            name="merk_rokok"
+            id="marlboro"
+            value="Marlboro"
+          />
+          <label for="marlboro">Marlboro</label>
+
+          <input
+            type="checkbox"
+            name="merk_rokok"
+            id="gudang-garam"
+            value="Gudang Garam"
+          />
+          <label for="gudang-garam">Gudang Garam</label>
+        </div>
+
+        <div>
+          <input
+            type="checkbox"
+            name="merk_rokok"
+            id="sampoerna"
+            value="Sampoerna"
+          />
+          <label for="sampoerna">Sampoerna</label>
+
+          <input
+            type="checkbox"
+            name="merk_rokok"
+            id="kapalsakti"
+            value="Kapal Sakti"
+          />
+          <label for="kapalsakti">Kapal Sakti</label>
+
+          <input
+            type="checkbox"
+            name="merk_rokok"
+            id="dunhill"
+            value="Dunhill"
+          />
+          <label for="dunhill">Dunhill</label>
+        </div>
+
+        <div>
+          <input type="checkbox" name="merk_rokok" id="esse" value="Esse" />
+          <label for="esse">Esse</label>
+
+          <input type="checkbox" name="merk_rokok" id="N/A" value="N/A" />
+          <label for="N/A">Tidak Ada</label>
+
+          <input
+            type="checkbox"
+            name="merk_rokok"
+            id="lainnya"
+            value="Lainnya"
+          />
+          <label for="lainnya">Lainnya</label>
+        </div>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+    <br />
+    <a href="./pages/data.html">Lihat Data Perokok</a>
+  </body>
 </html>
